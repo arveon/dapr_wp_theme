@@ -1,0 +1,14 @@
+/*
+Theme Name: DARP theme
+Author: Aleksejs Loginovs
+*/
+
+body{
+	font-family: Arial;
+	font-size:12px;
+	font-color:#404040;
+}
+
+body h2{
+	font-size:20px;
+}
