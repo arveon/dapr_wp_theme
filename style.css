@@ -9,6 +9,62 @@ body{
 	font-color:#404040;
 }
 
+/*
+header{
+	padding-bottom:70px;	
+}
+*/
+
+div.container {
+	max-width: 1000px;
+	min-width: 200px;
+	margin: 0 auto;
+	padding: 0 50px;
+}
+
+article.post {
+	border-bottom: 2px dotted #bbbbbb;
+	margin-bottom: 50px;
+}
+
+/* remove dotted line from last post */
+article:last-of-type{
+	border:none;
+}
+
+.site-header{
+	border-bottom:2px solid #bbbbbb;
+}
+
+.site-footer{
+	border-top:2px solid #bbbbbb;
+}
+
+nav.site-nav{
+	float:right;
+
+}
+
+.site-nav ul{
+
+}
+
+nav.site-nav ul li{
+	list-style:none;
+	float:left;
+	padding: 0 10px;
+}
+
 body h2{
 	font-size:20px;
+}
+
+a:link,
+a:visited {
+	color:#4e79ff;
+	text-decoration:none;
+}
+
+p {
+	line-height:1.5em;
 }

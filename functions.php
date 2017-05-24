@@ -6,5 +6,10 @@ function resources()
 }
 add_action('wp_enqueue_scripts', 'resources');
 
+//register locations
+register_nav_menus(array( 
+	'primary' => __('Primary Menu'),
+	'secondary' => __('Secondary Menu')
+	));
 
 ?>

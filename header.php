@@ -9,8 +9,15 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<div class="container">
 
-	<header class="site-header">
-		<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name');?></a></h1>
-		<h5><?php bloginfo('description'); ?> </h5>
-	</header>
+		<nav class="site-nav">
+			<!-- calling this location in the theme as primary -->
+			<?php $args = array('theme-location' => 'primary'); ?>
+			<?php wp_nav_menu($args); ?>
+		</nav>
+
+		<header class="site-header">
+			<h1><a href="<?php echo get_page_link('homepage') ?>"><?php bloginfo('name');?></a></h1>
+			<h5><?php bloginfo('description'); ?> </h5>
+		</header>
