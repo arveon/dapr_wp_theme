@@ -9,12 +9,6 @@ body{
 	font-color:#404040;
 }
 
-/*
-header{
-	padding-bottom:70px;	
-}
-*/
-
 div.container {
 	max-width: 1000px;
 	min-width: 200px;
@@ -24,20 +18,24 @@ div.container {
 
 article.post {
 	border-bottom: 2px dotted #bbbbbb;
-	margin-bottom: 50px;
+	padding-bottom: 20px;
 }
 
 /* remove dotted line from last post */
-article:last-of-type{
+article.post:last-of-type{
 	border:none;
+	padding-bottom:10px;
 }
 
 .site-header{
 	border-bottom:2px solid #bbbbbb;
+	margin-bottom:5px;
 }
 
 .site-footer{
 	border-top:2px solid #bbbbbb;
+	margin-top:10px;
+	clear:both;
 }
 
 nav.site-nav{
@@ -67,4 +65,46 @@ a:visited {
 
 p {
 	line-height:1.5em;
+}
+
+.post_thumb {
+	width:100px;
+	height:auto;
+	float:left;
+	padding-right:15px;
+	padding-bottom:15px;
+}
+
+.excerpt {
+
+}
+
+.viewpost {	
+	float:left;
+}
+
+.meta {
+	float:right;
+	vertical-align: bottom;
+	color:#555;
+}
+
+.article_bottom
+{
+	clear:both;
+}
+
+/*style for single post page */
+.pp_title{
+	text-align:center;
+}
+
+.pp_thumbnail{
+	width:100%;
+	height:auto;
+}
+
+.pp_meta{
+	text-align:right;
+	color:#666;
 }

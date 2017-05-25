@@ -18,6 +18,6 @@
 		</nav>
 
 		<header class="site-header">
-			<h1><a href="<?php echo get_page_link('homepage') ?>"><?php bloginfo('name');?></a></h1>
+			<h1><a href="<?php echo get_home_url(); ?>"><?php bloginfo('name');?></a></h1>
 			<h5><?php bloginfo('description'); ?> </h5>
 		</header>
