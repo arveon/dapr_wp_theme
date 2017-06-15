@@ -11,7 +11,9 @@
  * @since Twenty Sixteen 1.0
  */
 
-get_header(); ?>
+get_header(); 
+query_posts('post_type=project');
+?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
@@ -37,5 +39,6 @@ get_header(); ?>
 
 </div><!-- .content-area -->
 
-<?php get_sidebar(); ?>
+<?php get_sidebar(); 
+wp_reset_query(); ?>
 <?php get_footer(); ?>
